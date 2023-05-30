@@ -95,6 +95,7 @@ button {
     transition: 100ms;
    }
 
+
    .wave-group {
     position: relative;
   }
@@ -166,6 +167,12 @@ button {
   .wave-group .input:focus ~ .bar:before,
   .wave-group .input:focus ~ .bar:after {
     width: 50%;
+  }
+
+  #form-error {
+    color: #b33030;
+    margin: 0px;
+    padding-left: 1rem;
   }
 
 #notas-agrupadas{
