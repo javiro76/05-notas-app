@@ -188,3 +188,10 @@ button {
     border-radius: 0.5rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
+
+footer{
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1rem;
+
+}
