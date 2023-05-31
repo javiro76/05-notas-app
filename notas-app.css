@@ -22,7 +22,7 @@ main {
     width: 70rem;
     height: auto;
     margin: 10px;
-    background-color:rgb(218, 211, 211);
+    background-color:#deddc4;
     border-radius: 1rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 1rem;
