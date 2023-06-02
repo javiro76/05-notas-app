@@ -40,7 +40,7 @@ main {
     background-color: rgba(245, 246, 247, 0.932);
     border-radius: 0.5rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.2);
-    height: 12rem;
+    height: 8rem;
 }
 
 .button-container{
@@ -52,10 +52,8 @@ main {
 }
 
 input{
-    border:none;
+    
     font-weight: bold;
-    font-size: 1.5em;
-    background-color: transparent;
     margin-bottom: 0.5rem;
     outline: none;
     
@@ -69,9 +67,8 @@ textarea{
     margin-bottom: 0.5rem;
     outline: none;
     border-bottom: 2px solid black; 
-    height: 9rem;
     resize: none;
-    padding: 1rem;
+    padding: 1rem 0;
     
 }
 
@@ -109,7 +106,7 @@ button {
   }
   
   .wave-group .input {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 95%;
@@ -189,7 +186,7 @@ button {
     flex-direction: column;
     margin-bottom: 1rem;
     padding: 1rem;
-    background-color: rgba(245, 246, 247, 0.932);
+    background-color: transparent;
     border-radius: 0.5rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
