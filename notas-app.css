@@ -69,9 +69,9 @@ textarea{
     margin-bottom: 0.5rem;
     outline: none;
     border-bottom: 2px solid black; 
-    resize: vertical;
     height: 9rem;
     resize: none;
+    padding: 1rem;
     
 }
 
@@ -195,7 +195,7 @@ button {
 }
 
 footer{
-  position: fixed;
+  position: relative;
   bottom: 0;
   margin-bottom: 1rem;
 
