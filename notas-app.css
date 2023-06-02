@@ -82,6 +82,7 @@ button {
     text-transform: uppercase;
     font-size: 10px;
     transition: all .5s ease;
+    
    }
    
    button:hover {
@@ -209,6 +210,7 @@ button {
 
 .botones-edicion{
   display: flex;
+  gap: 0.3rem;
   
 
   width: 50;
@@ -221,6 +223,21 @@ button {
 
 p{
   margin: 0;
+}
+
+.btns-avance{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.btns-avance button{
+  font-size: 0.5rem;
+  font-weight: bold;
+  height: 1.5rem;
+  width: 4rem;
+  padding: 0;
 }
 
 
