@@ -191,6 +191,39 @@ button {
     border: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
+.botones-edicion button{
+  font-size: 0.5rem;
+  font-weight: bold;
+  height: 1rem;
+  width: 4rem;
+  padding: 0;
+}
+
+#btn-guardar{
+  display: none;
+}
+
+#btn-editar{
+  display: inline-block;
+}
+
+.botones-edicion{
+  display: flex;
+  
+
+  width: 50;
+}
+.index{
+  margin-left: auto;
+
+ 
+}
+
+p{
+  margin: 0;
+}
+
+
 footer{
   position: relative;
   bottom: 0;
