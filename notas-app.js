@@ -56,16 +56,19 @@ function renderizarFrase(){
         notasAgrupadas.appendChild(div);
     });
 
+    for(let i = 0; i < notasAgrupadas.childNodes.length; i++){
+        notasAgrupadas.style.display = 'block';
+    if(i % 4 === 0){
+        notasAgrupadas.style.display = 'none';
+    }
+    
+    console.log(notasAgrupadas.childNodes.length);
+
+    console.dir(notasAgrupadas);
+    }
 }
-renderizar = () => {    
-    const notasAgrupadas = document.querySelector('#notas-agrupadas');
-    notasAgrupadas.innerHTML = '';
-    frases.forEach((frase) => {
-        const div = document.createElement('div');
-        div.innerHTML = `<h1>${frase.autor}</h1>`;
-        notasAgrupadas.appendChild(div);
-    });
-}
+
+
 
 
 class Frase{
@@ -85,10 +88,6 @@ class Frase{
         return Frase.counter++;    
     }
 
-    crearFrase(){
-        
-    }
-    
 }
 
 
