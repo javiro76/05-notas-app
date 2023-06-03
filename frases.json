@@ -1,0 +1,108 @@
+[
+    {
+      "id" : 1,
+      "autor" : "Duke Ellington",
+      "quote" : "Los problemas son oportunidades para demostrar lo que sabes."
+    },
+    {
+        "id" : 2, 
+        "autor" : "Henry Ford",
+        "frase" : "Nuestros fracasos son a veces más fructíferos que nuestros éxitos."
+    },
+      {
+        "id" : 3, 
+        "autor" : "Samuel Beckett",
+        "frase" : "Inténtalo de nuevo. Fracasa otra vez. Pero fracasa mejor"
+      },
+      {
+        "id" : 4,
+        "autor" : "Sócrates",
+        "frase" : "Es costumbre del necio, cuando yerra, quejarse de los demás. La costumbre del sabio es quejarse de sí mismo"
+      },
+      {
+        "id" : 5,
+        "autor" : "W. F. Grenfel",
+        "quote" : "El verdadero heroísmo consiste en persistir un momento más cuando todo parece perdido"
+      },
+      {
+        "id" : 6,
+        "autor" : "Norman Bawes",
+        "frase" : "Cada cliente es como si fuera el primero y único"
+      },
+      {
+        "id" : 7,
+        "autor" : "San Agustín", 
+        "frase" : "Aunque hayas recorrido un largo camino, siempre hay un nuevo sendero que recorrer"
+      },
+      {
+        "id" : 8,
+        "autor" : "Ciclo de Profesionales de la Venta",
+        "frase" : "Vender es construir un puente entre tú y tu cliente y conseguir que cruce a tu lado"
+      },
+      {
+        "id" : 9,
+        "autor" : "Churton Collins", 
+        "quote" : "En la prosperidad, nuestros amigos nos conocen; en la adversidad, conocemos a nuestros amigos"
+      },
+      {
+        "id" : 10, 
+        "autor" : "Jean Paul Sartre", 
+        "statement" : "La felicidad no consiste en hacer lo que uno quiere, sino en querer lo que uno hace"
+      },
+      {
+        "id" : 11,
+        "autor" : "Carl Sandburg",
+        "quote" : "Nada sucede a menos que lo sueñes primero"
+      },
+      {
+        "id" : 12, 
+        "autor" : "Walt Disney",
+        "quote" : "Siempre es divertido hacer lo imposible"
+      },
+      {
+        "id" : 13, 
+        "autor" : "Jan Carlzon",
+        "quote" : "Lo más caro es convertir a un cliente insatisfecho en uno satisfecho"
+      },
+      {
+        "id" : 14,
+        "autor" : "Oscar Wilde",
+        "quote" : "Experiencia es el nombre que cada uno da a sus errores"
+      },
+      {
+        "id" : 15, 
+        "autor" : "Abraham Lincoln",
+        "frase" : "Recuerda siempre que tu voluntad de triunfo es más importante que cualquier otra cosa"
+      },
+      {
+        "id" : 16, 
+        "autor" : "Anatole France",
+        "frase" : "Prefiero los errores del entusiasmo a la indiferencia de la sabiduría"
+      },
+      {
+        "id" : 17,
+        "autor" : "Carter Brow",
+        "quote" : "En realidad, ventas y servicio son inseparables"
+      },
+      {
+        "id" : 18, 
+        "autor" : "Napoleón Bonaparte", 
+        "statement" : "El arte de ser a veces audaz, a veces prudente, es el arte de vencer"
+      },
+      {
+        "id" : 19,
+        "autor" : "H. Jackson Brown Jr",
+        "quote" : "Sé valiente. Aunque no lo seas, finge serlo. Nadie notará la diferencia"
+      },
+      {
+        "id" : 20,
+        "autor" : "Moliere",
+        "frase" : "No sólo somos responsables de lo que hacemos, sino también de lo que dejamos de hacer"
+      },
+      {
+        "id" : 21, 
+        "autor" : "Michael Gerber", 
+        "quote" : "La estrategia de marketing empieza, termina, vive y muere con el cliente"
+      }
+
+]
