@@ -39,7 +39,7 @@ function eliminarFrase(){
     
         id = e.target.id;
         console.log(id);
-        const divElement = document.querySelector(`#${id}`);
+        const divElement = document.querySelector(`#n${id}`);
         console.log(`hola soy el boton ${e.target.id}`);
         console.log(divElement);
         const index = frases.findIndex((frase) => frase.id == e.target.id);
@@ -47,7 +47,7 @@ function eliminarFrase(){
         console.log(index);
         if (index !== -1){
             frases.splice(index, 1);           
-            
+            divElement.remove();
         }
         console.log(frases);
         
@@ -73,7 +73,7 @@ function renderizarFrase(){
     notasAgrupadas.innerHTML = '';
     frases.forEach((frase) => {
         const div = document.createElement('div');
-        div.innerHTML = ` <div class="nueva-nota" id="${frase.id}">
+        div.innerHTML = ` <div class="nueva-nota" id="n${frase.id}">
         <div class="wave-group">
         <input required="" type="text" class="input" maxlength="20" value=${frase.autor} >
         <span class="bar"></span>
@@ -138,9 +138,9 @@ function renderizarFrase(){
 
 
 
-const frase1 = new Frase('Albert Einstein', 'La imaginación es más importante que el conocimiento');
-console.log(frase1);
-const frase2 = new Frase('Albert Einstein', 'La imaginación es más importante que el conocimiento');
-console.log(frase2);
+// const frase1 = new Frase('Albert Einstein', 'La imaginación es más importante que el conocimiento');
+// console.log(frase1);
+// const frase2 = new Frase('Albert Einstein', 'La imaginación es más importante que el conocimiento');
+// console.log(frase2);
 
 
