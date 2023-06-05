@@ -20,6 +20,7 @@ addButton.addEventListener('click', () => {
     renderizarFrase();
     resetearFormulario();
     eliminarFrase();
+    editarFrase();
     
 }); 
 
@@ -38,33 +39,44 @@ function eliminarFrase(){
     btn.addEventListener('click', (e) => {
     
         id = e.target.id;
-        console.log(id);
         const divElement = document.querySelector(`#n${id}`);
-        console.log(`hola soy el boton ${e.target.id}`);
-        console.log(divElement);
         const index = frases.findIndex((frase) => frase.id == e.target.id);
         
-        console.log(index);
         if (index !== -1){
             frases.splice(index, 1);           
             divElement.remove();
         }
-        console.log(frases);
         
-        
-        
-            //     const id = e.target.id;
-        //     const idNum = id.split('-')[1];
-        //     const index = frases.findIndex((frase) => frase.id == idNum);
-        //     frases.splice(index, 1);
-        //     renderizarFrase();
-        //     eliminarFrase();
-        // });
     });
     
 });
 
-}
+};
+
+function editarFrase(){
+    const btnsEditar = document.querySelectorAll(".btns-editar");
+    btnsEditar.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            accessKey = e.target.accessKey;
+            const input = document.querySelector(`#input-${e.target.id}`);
+            const textArea = document.querySelector(`#content-${e.target.id}`);
+            const btnSave = document.querySelector(`#save-${e.target.id}`);
+           
+            const btnEdit = document.querySelector('[accesskey="'+accessKey+'"]');
+            // console.log(e.target.id);
+            // console.dir(e.target);
+            input.style.pointerEvents = 'auto';
+            textArea.style.pointerEvents = 'auto';
+            btnEdit.style.display = 'none';
+            btnSave.style.display = 'block';
+            //TODO: PENDIENTE LLAMAR A LA FUNCION GUARDAR
+            
+            // console.log('hola');
+            // console.log(input);
+            // console.log(btnSave);
+        });
+    });
+};
 
 
 
@@ -75,7 +87,7 @@ function renderizarFrase(){
         const div = document.createElement('div');
         div.innerHTML = ` <div class="nueva-nota" id="n${frase.id}">
         <div class="wave-group">
-        <input required="" type="text" class="input" maxlength="20" value=${frase.autor} >
+        <input required="" type="text" class="input" maxlength="20" value="${frase.autor}" id="input-${frase.id}" >
         <span class="bar"></span>
         <label class="label">
         <span class="label-char" style="--index: 0">T</span>
@@ -86,32 +98,23 @@ function renderizarFrase(){
               <span class="label-char" style="--index: 3">o</span>
               </label>
               </div>
-              <textarea name="content" id="content" placeholder="Escribe tu Nota" maxlength="100">${frase.frase}</textarea>
+              <textarea name="content" id="content-${frase.id}" placeholder="Escribe tu Nota" maxlength="100">${frase.frase}</textarea>
               <div class="botones-edicion">
               
-              <button id="btn-editar">Editar</button>
-              <button id="btn-guardar">Guardar</button>
+              <button class="btns-editar" id="${frase.id}" accessKey="${frase.id}">Editar</button>
+              <button id="save-${frase.id}">Guardar</button>
               <button class="btns-eliminar" id="${frase.id}">Eliminar</button>
               <div class="index">
               <p id="num-id">${frase.id}</p>`;
               notasAgrupadas.appendChild(div);
-              div.accessKey = frase.id;
-              console.log(div);
+              //div.accessKey = frase.id;
               
-              
-              console.dir(div);
+              //console.dir(div);
             });
 
-            // for(let i = 0; i < notasAgrupadas.childNodes.length; i++){
-                //     notasAgrupadas.style.display = 'block';
-                // if(i % 4 === 0){
-                    //     notasAgrupadas.style.display = 'none';
-                    // }
-                    
-                    // console.log(notasAgrupadas.childNodes.length);
-                    
-                    // console.dir(notasAgrupadas);
-                }
+           ;
+
+}
                 
                 
                 
