@@ -69,13 +69,48 @@ function editarFrase(){
             textArea.style.pointerEvents = 'auto';
             btnEdit.style.display = 'none';
             btnSave.style.display = 'block';
-            //TODO: PENDIENTE LLAMAR A LA FUNCION GUARDAR
+            guardarFrase();
             
             // console.log('hola');
             // console.log(input);
             // console.log(btnSave);
         });
     });
+};
+
+
+function guardarFrase(){
+
+    const btnsGuardar = document.querySelectorAll(".btns-guardar");
+    btnsGuardar.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            id = e.target.id,
+            accessKey = e.target.accessKey;
+            const input = document.querySelector(`#input-${accessKey}`);
+            const textArea = document.querySelector(`#content-${accessKey}`);
+            const btnSave = document.querySelector(`#save-${accessKey}`);
+            const btnEdit = document.querySelector('[accesskey="'+accessKey+'"]');
+
+            const fraseEditar = frases.find((frase) => frase.id == accessKey);
+            console.log(fraseEditar);
+            if(fraseEditar){
+                
+                fraseEditar.autor = input.value;
+                fraseEditar.frase = textArea.value;
+                
+            }
+            input.style.pointerEvents = 'none';
+            textArea.style.pointerEvents = 'none';
+            btnEdit.style.display = 'block';
+            btnSave.style.display = 'none';
+
+            
+        })
+    })
+
+
+
+
 };
 
 
@@ -102,7 +137,7 @@ function renderizarFrase(){
               <div class="botones-edicion">
               
               <button class="btns-editar" id="${frase.id}" accessKey="${frase.id}">Editar</button>
-              <button id="save-${frase.id}">Guardar</button>
+              <button class="btns-guardar" id="save-${frase.id}" accessKey="${frase.id}">Guardar</button>
               <button class="btns-eliminar" id="${frase.id}">Eliminar</button>
               <div class="index">
               <p id="num-id">${frase.id}</p>`;
